@@ -1,3 +1,3 @@
-primer archivo que subo a este repositorio hithub!
+primer archivo que subo a este repositorio github!
 
 que emocion!
