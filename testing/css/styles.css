@@ -1,0 +1,75 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav a:hover {
+    color: #f39c12;
+}
+.section {
+    padding: 2rem;
+    text-align: center;
+}
+.section h2 {
+    margin-bottom: 1rem;
+}
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+.section ul li {
+    margin: 0.5rem 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form label {
+    margin-top: 1rem;
+}
+form input, form textarea, form button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 400px;
+}
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+form button:hover {
+    background-color: #f39c12;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+.social-media a:hover {
+    color: #f39c12;
+}
