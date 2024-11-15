@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Werken está en construcción!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #FF6F61, #FFD95A, #85E3FF, #B9FBC0);
+            background-size: 400% 400%;
+            animation: gradientBackground 8s ease infinite;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #fff;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: #FF6F61;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .icon {
+            font-size: 5rem;
+            margin: 20px 0;
+            color: #FFD95A;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>¡Werken está en construcción!</h1>
+        <p>Estamos trabajando para traerte algo increíble. 🎉</p>
+        <div class="icon">🚀✨🌈</div>
+        <a href="mailto:contacto@werken.com" class="button">Contáctanos</a>
+    </div>
+</body>
+</html>
