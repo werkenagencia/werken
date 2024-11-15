@@ -17,6 +17,7 @@
             align-items: center;
             height: 100vh;
             text-align: center;
+            flex-direction: column; /* Para apilar elementos verticalmente */
         }
 
         @keyframes gradientBackground {
@@ -73,10 +74,20 @@
             margin: 20px 0;
             color: #FFD95A;
         }
+
+        .logo {
+            width: 150px; /* Ajusta el tamaño del logo */
+            height: auto;
+            margin-bottom: 20px; /* Espaciado debajo del logo */
+        }
     </style>
 </head>
 <body>
     <div>
+        <!-- Logo -->
+        <img src="logo.jpeg" alt="Logo de Werken" class="logo">
+        
+        <!-- Título y contenido -->
         <h1>¡Werken está en construcción!</h1>
         <p>Estamos trabajando para traerte algo increíble. 🎉</p>
         <div class="icon">🚀✨🌈</div>
