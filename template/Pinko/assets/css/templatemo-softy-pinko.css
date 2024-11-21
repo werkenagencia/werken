@@ -314,7 +314,7 @@ a.main-button-slider {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #ff589e;
+  background-color: #364d40;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -325,16 +325,16 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: #8261ee;
+  background-color: #b485ee;
 }
 
 a.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #d2f77f;
+  background-color: #364d40;
   text-transform: uppercase;
-  color: #d2f77f;
+  color: #ffffff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -343,7 +343,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #b485ee;
+  background-color: #4c63f2;
 }
 
 button.main-button {
@@ -353,9 +353,9 @@ button.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #d2f77f;
+  background-color: #364d40;
   text-transform: uppercase;
-  color: #d2f77f;
+  color: #ffffff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -364,7 +364,7 @@ button.main-button {
 }
 
 button.main-button:hover {
-  background-color: #b485ee;
+  background-color: #4c63f2;
 }
 
 
