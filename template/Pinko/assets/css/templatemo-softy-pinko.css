@@ -314,7 +314,7 @@ a.main-button-slider {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #4c63f2;
+  background-color: #b485ee;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -325,7 +325,7 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: #b485ee;
+  background-color: #4c63f2;
 }
 
 a.main-button {
@@ -353,7 +353,7 @@ button.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #364d40;
+  background-color: #4c63f2;
   text-transform: uppercase;
   color: #ffffff;
   letter-spacing: 0.25px;
@@ -364,7 +364,7 @@ button.main-button {
 }
 
 button.main-button:hover {
-  background-color: #4c63f2;
+  background-color: #b485ee;
 }
 
 
@@ -1244,8 +1244,8 @@ pricing
   width: 180px;
   height: 40px;
   line-height: 40px;
-  left: 0px;
-  right: 0px;
+  left: 15px;
+  right: 15px;
   margin: auto;
 }
 
