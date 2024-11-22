@@ -113,12 +113,12 @@ body {
 }
 
 ::selection {
-  background: #d2f77f;
+  background: #008000;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #d2f77f;
+  background: #008000;
   color: #fff;
 }
 
@@ -670,7 +670,7 @@ welcome
 
 .welcome-area .header-text p {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   color: #fff;
   line-height: 28px;
   letter-spacing: 0.25px;
@@ -805,9 +805,9 @@ features
 }
 
 .features-small-item p {
-  font-weight: 400;
-  font-size: 13px;
-  color: #777;
+  font-weight: 500;
+  font-size: 14px;
+  color: #565656;
   letter-spacing: 0.5px;
   line-height: 25px;
   position: relative;
@@ -1128,7 +1128,7 @@ team
   margin-left: 25px;
   margin-top: 25px;
   font-size: 30px;
-  color: #4E47DE;
+  color: #4c63f2;
   text-align: center;
 }
 
@@ -1175,7 +1175,7 @@ team
   display: block;
   font-weight: 400;
   font-size: 15px;
-  color: #ff589e;
+  color: #1e1e1e;
   letter-spacing: 0.25px;
 }
 
@@ -1186,7 +1186,7 @@ team
   margin-bottom: 25px;
   font-weight: 400;
   font-size: 15px;
-  color: #777;
+  color: #565656;
   letter-spacing: 0.6px;
   line-height: 26px;
 }
