@@ -1,1 +1,55 @@
+.workflow-container {
+  text-align: center;
+  padding: 50px 20px;
+}
 
+.workflow-container h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.workflow-step {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4c63f2;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.workflow-step span {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.workflow-step p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .circle {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .workflow-step {
+    width: 100px;
+    height: 100px;
+  }
+}
