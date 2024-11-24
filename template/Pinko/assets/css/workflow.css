@@ -9,11 +9,11 @@
 /* Estilos para cada paso */
 .workflow-step {
   text-align: center;
-  color: #fff; /* Texto blanco */
+  color: #4c63f2; /* Texto azul */
 }
 
 .workflow-step h3 {
-  font-size: 24px; /* Título más grande */
+  font-size: 20px; /* Título más grande */
   margin-bottom: 10px;
 }
 
@@ -24,7 +24,9 @@
 
 /* Estilos para las flechas */
 .workflow-arrow {
-  position: relative;
+  position: absolute;
+  right: -20px; /* Ajusta la distancia de la flecha desde el borde derecho */
+  top: 50%;
   color: #d2f77f; /* Color verde */
   font-size: 30px; /* Tamaño de la flecha */
   transition: transform 0.3s ease; /* Movimiento suave */
@@ -37,5 +39,5 @@
 
 /* Fondo azul */
 body {
-  background-color: #4c63f2;
+  background-color: #fff;
 }
