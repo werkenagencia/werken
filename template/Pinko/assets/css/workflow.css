@@ -21,8 +21,8 @@
 .workflow-step {
   background-color: #4c63f2;
   color: #fff;
-  width: 120px;  /* Aumentamos el tamaño */
-  height: 120px; /* Aumentamos el tamaño */
+  width: 140px;  /* Aumentamos el tamaño */
+  height: 140px; /* Aumentamos el tamaño */
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -45,7 +45,7 @@
 .workflow-step p {
   font-size: 14px;
   line-height: 20px;
-  margin-top: 7px;
+  margin-top: 5px;
   word-wrap: break-word; /* Ajustar palabras largas 
 }
 
