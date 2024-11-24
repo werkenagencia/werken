@@ -1,25 +1,20 @@
-.workflow-redesign {
-  background-color: #4c63f2;
-  padding: 30px;
-  text-align: center;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  position: relative;
+/* Estilos para el contenedor de los pasos */
+.workflow-container {
+  display: flex; /* Alinea los pasos horizontalmente */
+  justify-content: space-around; /* Espacia uniformemente los pasos */
+  align-items: center; /* Centra los pasos verticalmente */
+  margin: 20px 0; /* Agrega espacio arriba y abajo */
 }
 
+/* Estilos para cada paso */
 .workflow-step {
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 300px;
-  position: relative;
-  z-index: 1;
+  text-align: center;
+  color: #fff; /* Texto blanco */
 }
 
 .workflow-step h3 {
-  font-size: 24px;
+  font-size: 24px; /* Título más grande */
   margin-bottom: 10px;
-  color: #fff;
 }
 
 .workflow-step p {
@@ -27,37 +22,20 @@
   line-height: 1.5;
 }
 
-.arrow {
-  width: 80px;
-  height: 40px;
-  background-color: transparent;
-  margin: 0 auto;
+/* Estilos para las flechas */
+.workflow-arrow {
   position: relative;
-  z-index: 0;
+  color: #d2f77f; /* Color verde */
+  font-size: 30px; /* Tamaño de la flecha */
+  transition: transform 0.3s ease; /* Movimiento suave */
 }
 
-.arrow:after {
-  content: '';
-  width: 80px;
-  height: 40px;
-  border: 4px solid #d2f77f;
-  border-radius: 40px;
-  display: block;
-  animation: arrow-move 1.5s infinite ease-in-out;
+/* Efecto hover para mover las flechas */
+.workflow-arrow:hover {
+  transform: translateX(10px); /* Mueve la flecha ligeramente a la derecha */
 }
 
-@keyframes arrow-move {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.arrow:not(:last-child) {
-  margin-bottom: 20px;
+/* Fondo azul */
+body {
+  background-color: #4c63f2;
 }
