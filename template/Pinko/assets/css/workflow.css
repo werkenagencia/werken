@@ -1,11 +1,12 @@
-/* Aseguramos que los pasos tengan un contenedor que limite su ancho */
+/* Contenedor general */
 .workflow-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%; /* Limita el ancho al 80% de la pantalla */
+  width: 100%;
+  height: 150px; /* Altura mayor */
   margin: 0 auto;
-  background-color: #4c63f2; /* Fondo azul solo para la franja */
+  background-color: #4c63f2;
   padding: 20px 0;
   position: relative;
 }
@@ -25,30 +26,43 @@
   line-height: 1.5;
 }
 
-/* Flechas */
+/* Pseudo-elemento para las flechas */
 .workflow-step::after {
-  content: '→'; /* Flecha hacia la derecha */
+  content: "→"; /* Flecha */
   font-size: 24px;
   color: #d2f77f;
   position: absolute;
   top: 50%;
-  left: 100%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* Alinea verticalmente */
   transition: transform 0.3s ease;
 }
 
-.workflow-step:hover::after {
-  transform: translateY(-50%) translateX(5px); /* Movimiento ligero hacia la derecha al hacer hover */
+/* Ubicación de las flechas entre los pasos */
+.workflow-step:nth-child(1)::after {
+  left: calc(100% + 20px); /* Alineación de la flecha entre el paso 1 y 2 */
+}
+
+.workflow-step:nth-child(2)::after {
+  left: calc(100% + 20px); /* Alineación de la flecha entre el paso 2 y 3 */
+}
+
+.workflow-step:nth-child(3)::after {
+  left: calc(100% + 20px); /* Alineación de la flecha entre el paso 3 y 4 */
 }
 
 /* Título de cada paso */
 .workflow-step h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-/* Asegura que las flechas no se superpongan a los pasos */
-.workflow-container .workflow-step:last-child::after {
-  content: none; /* El último paso no tiene flecha */
+/* El último paso no tiene flecha */
+.workflow-step:last-child::after {
+  display: none;
+}
+
+/* Efecto hover sobre las flechas */
+.workflow-step::after:hover {
+  transform: translateY(-50%) translateX(5px); /* Movimiento ligero hacia la derecha al hacer hover */
 }
