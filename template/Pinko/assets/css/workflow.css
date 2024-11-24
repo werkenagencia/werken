@@ -1,20 +1,23 @@
-/* Estilos para el contenedor de los pasos */
+/* Aseguramos que los pasos tengan un contenedor que limite su ancho */
 .workflow-container {
-  display: flex; /* Alinea los pasos horizontalmente */
-  justify-content: space-around; /* Espacia uniformemente los pasos */
-  align-items: center; /* Centra los pasos verticalmente */
-  margin: 20px 0; /* Agrega espacio arriba y abajo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%; /* Limita el ancho al 80% de la pantalla */
+  margin: 0 auto;
+  background-color: #4c63f2; /* Fondo azul solo para la franja */
+  padding: 20px 0;
+  position: relative;
 }
 
-/* Estilos para cada paso */
+/* Estilo para cada paso */
 .workflow-step {
+  position: relative;
   text-align: center;
-  color: #4c63f2; /* Texto azul */
-}
-
-.workflow-step h3 {
-  font-size: 20px; /* Título más grande */
-  margin-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  width: 22%; /* Ajustamos el tamaño para que quepan los 4 pasos */
 }
 
 .workflow-step p {
@@ -22,22 +25,30 @@
   line-height: 1.5;
 }
 
-/* Estilos para las flechas */
-.workflow-arrow {
+/* Flechas */
+.workflow-step::after {
+  content: '→'; /* Flecha hacia la derecha */
+  font-size: 24px;
+  color: #d2f77f;
   position: absolute;
-  right: -20px; /* Ajusta la distancia de la flecha desde el borde derecho */
   top: 50%;
-  color: #d2f77f; /* Color verde */
-  font-size: 30px; /* Tamaño de la flecha */
-  transition: transform 0.3s ease; /* Movimiento suave */
+  left: 100%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
 }
 
-/* Efecto hover para mover las flechas */
-.workflow-arrow:hover {
-  transform: translateX(10px); /* Mueve la flecha ligeramente a la derecha */
+.workflow-step:hover::after {
+  transform: translateY(-50%) translateX(5px); /* Movimiento ligero hacia la derecha al hacer hover */
 }
 
-/* Fondo azul */
-body {
-  background-color: #fff;
+/* Título de cada paso */
+.workflow-step h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Asegura que las flechas no se superpongan a los pasos */
+.workflow-container .workflow-step:last-child::after {
+  content: none; /* El último paso no tiene flecha */
 }
