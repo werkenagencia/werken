@@ -5,39 +5,42 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas */
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
   gap: 20px; /* Espacio entre bloques */
-  max-width: 80%; /* Texto al 80% del ancho */
+  max-width: 80%; /* Ocupa el 80% del ancho */
   margin: 0 auto;
 }
 
 .service-item {
+  position: relative;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ccc; /* Línea fina */
-}
-
-.service-item:last-child {
-  border-bottom: none; /* Quitar línea al último bloque */
+  border-bottom: 1px solid #ccc; /* Línea fina debajo del texto */
 }
 
 .service-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #4c63f2; /* Azul */
+  margin-bottom: 5px;
 }
 
 .service-description {
   font-size: 1rem;
   color: #333; /* Gris oscuro */
+  margin: 0;
 }
 
 .service-arrow {
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 1.5rem;
   color: #4c63f2; /* Azul */
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .service-item:hover .service-arrow {
-  transform: translateX(5px); /* Mover la flecha ligeramente a la derecha */
+  transform: translate(10px, -50%); /* Mover flecha ligeramente hacia la derecha al pasar el mouse */
+  color: #d2f77f; /* Verde claro */
 }
