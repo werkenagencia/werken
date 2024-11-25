@@ -1335,82 +1335,85 @@ pricing
 ---------------------------------------------
 cases
 --------------------------------------------- 
-*/
-/* Estilo para la sección de casos */
+/* Contenedor principal de la sección */
 .cases-section {
-  background-color: #fff;
-  padding: 40px 20px;
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    padding: 50px 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.cases-header h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #4c63f2; /* Azul principal */
-  margin-bottom: 10px;
+/* Contenedor de los casos */
+.cases-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.cases-header p {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 30px;
+/* Estilo de cada caso */
+.case {
+    position: relative;
+    width: 45%; /* Dos por fila */
+    overflow: hidden;
 }
 
-/* Grid para los casos */
-.cases-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px; /* Espaciado entre los elementos */
+.case img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Efecto hover */
 }
 
-/* Estilo para cada caso */
-.case-item {
-  position: relative;
-  text-align: left;
-  overflow: hidden;
-  border-radius: 8px;
+/* Texto sobre la imagen */
+.case-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    color: #fff;
+    text-align: center;
+    opacity: 0; /* Ocultar inicialmente */
+    transition: opacity 0.3s ease; /* Transición de visibilidad */
+    padding: 20px;
 }
 
-.case-tag {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 0.9rem;
-  background-color: #4c63f2; /* Azul principal */
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  z-index: 1;
+/* Efecto hover: mostrar texto */
+.case:hover img {
+    transform: scale(1.1); /* Ampliar imagen al pasar el mouse */
 }
 
-.case-image {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease; /* Animación al pasar el mouse */
-  display: block;
-  border-radius: 8px;
+.case:hover .case-text {
+    opacity: 1; /* Mostrar texto al pasar el mouse */
 }
 
-.case-item:hover .case-image {
-  transform: scale(1.05); /* Efecto de agrandar la imagen */
+/* Estilo de la etiqueta */
+.case-text .case-tag {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #d2f77f; /* Verde claro */
 }
 
-.case-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-  margin-top: 15px;
+/* Título del caso */
+.case-text h3 {
+    font-size: 24px; /* Tamaño grande para el título */
+    font-weight: bold;
+    margin: 10px 0;
 }
 
-.case-description {
-  font-size: 1rem;
-  color: #666;
-  margin-top: 5px;
+/* Descripción del caso */
+.case-text p {
+    font-size: 20px;
+    line-height: 1.5;
 }
-/* 
 ---------------------------------------------
 contact
 --------------------------------------------- 
