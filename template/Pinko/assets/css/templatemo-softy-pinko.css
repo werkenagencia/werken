@@ -13,7 +13,7 @@ Table of contents
 03. global styles
 04. header
 05. welcome
-06. features
+06. testimonials
 07. team
 08. pricing
 09. cases
@@ -775,94 +775,89 @@ welcome
 
 /* 
 ---------------------------------------------
-features
+testimonials
 --------------------------------------------- 
 */
-.features-small-item {
-  cursor: pointer;
-  display: block;
-  background: #FFFFFF;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  padding: 30px;
+/* Estilo general para la sección */
+.testimonials-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
   text-align: center;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+}
+
+.testimonial-wrapper {
   position: relative;
-  margin-bottom: 30px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.features-small-item:hover .icon {
-  background-color: #d2f77f;
+.testimonial {
+  display: none; /* Por defecto, los testimonios están ocultos */
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  padding: 20px;
 }
 
-.features-small-item .icon {
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  width: 90px;
-  height: 90px;
-  line-height: 90px;
-  margin: auto;
+.testimonial.active {
+  display: block; /* Mostrar solo el testimonio activo */
+}
+
+.testimonial-text {
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 1.5;
   position: relative;
-  margin-bottom: 30px;
-  background: #d2f77f;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
 }
 
-.features-small-item .icon i {
-  font-size: 18px;
-  color: #fff;
+.testimonial-text::before {
+  content: "“"; /* Comillas de apertura grandes */
+  font-size: 4rem;
+  color: #4c63f2;
+  position: absolute;
+  left: -30px;
+  top: -20px;
 }
 
-.features-small-item .features-title {
-  font-weight: 500;
-  font-size: 18px;
-  color: #1e1e1e;
-  letter-spacing: 0.7px;
-  margin-bottom: 15px;
-  position: relative;
-  z-index: 2;
+.testimonial-text::after {
+  content: "”"; /* Comillas de cierre grandes */
+  font-size: 4rem;
+  color: #4c63f2;
+  position: absolute;
+  right: -30px;
+  bottom: -20px;
 }
 
-.features-small-item p {
-  font-weight: 500;
-  font-size: 14px;
-  color: #565656;
-  letter-spacing: 0.5px;
-  line-height: 25px;
-  position: relative;
-  z-index: 2;
+.testimonial-author {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 20px;
 }
 
-.features-small-item a {
-  float: right;
-  position: relative;
-  z-index: 2;
+/* Flechas de navegación */
+.arrow-left, .arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #4c63f2;
+  cursor: pointer;
 }
 
-.home-feature {
-  padding-bottom: 0px;
-  padding-top: 30px;
-  margin-top: -220px;
-  z-index: 9;
+.arrow-left {
+  left: 10px;
 }
 
-@media (max-width: 991px) {
-  .home-feature {
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin-top: 0px;
-  }
+.arrow-right {
+  right: 10px;
 }
 
+.arrow-left:hover, .arrow-right:hover {
+  color: #333;
+}
 /* 
 ---------------------------------------------
 parallax & home seperator
