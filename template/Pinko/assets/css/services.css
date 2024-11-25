@@ -29,18 +29,3 @@
   color: #333; /* Gris oscuro */
   margin: 0;
 }
-
-.service-arrow {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.5rem;
-  color: #4c63f2; /* Azul */
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.service-item:hover .service-arrow {
-  transform: translate(10px, -50%); /* Mover flecha ligeramente hacia la derecha al pasar el mouse */
-  color: #d2f77f; /* Verde claro */
-}
