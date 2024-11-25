@@ -16,7 +16,7 @@ Table of contents
 06. features
 07. team
 08. pricing
-09. blog
+09. cases
 10. contact
 11. footer
 12. preloader
@@ -1338,79 +1338,83 @@ pricing
 
 /* 
 ---------------------------------------------
-blog
+cases
 --------------------------------------------- 
 */
-.blog-post-thumb {
+/* Estilo para la sección de casos */
+.cases-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
+  border-radius: 8px;
+}
+
+.cases-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4c63f2; /* Azul principal */
+  margin-bottom: 10px;
+}
+
+.cases-header p {
+  font-size: 1.2rem;
+  color: #666;
   margin-bottom: 30px;
 }
 
-.blog-post-thumb.big .img {
-  height: 400px;
+/* Grid para los casos */
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Espaciado entre los elementos */
 }
 
-.blog-post-thumb .img {
-  overflow: hidden;
-  border-radius: 20px;
+/* Estilo para cada caso */
+.case-item {
   position: relative;
-  height: 200px;
-}
-
-.blog-post-thumb .blog-content {
-  margin-top: -30px;
-  padding-top: 50px;
-}
-
-.blog-post-thumb h3 {
-  margin-bottom: 20px !important;
-}
-
-.blog-post-thumb h3 a {
-  font-weight: 500;
-  font-size: 18px;
-  color: #1e1e1e;
-  letter-spacing: 0.25px;
-  line-height: 26px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.blog-post-thumb h3 a:hover {
-  color: #b485ee;
-}
-
-.blog-post-thumb .text {
-  font-weight: 400;
-  font-size: 13px;
-  color: #777;
-  letter-spacing: 0.26px;
-  line-height: 26px;
-  margin-bottom: 15px;
-}
-
-.blog-post-thumb .post-footer span {
-  float: left;
-  height: 30px;
-  line-height: 30px;
-  font-weight: 300;
-  font-size: 14px;
-  color: #777;
-  padding-left: 30px;
-}
-
-.blog-post-thumb a.main-button  {
-  margin-top: 10px;
-  display: inline-block;
-}
-
-.blog-list .blog-post-thumb {
   text-align: left;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
+.case-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.9rem;
+  background-color: #4c63f2; /* Azul principal */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
 
+.case-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Animación al pasar el mouse */
+  display: block;
+  border-radius: 8px;
+}
+
+.case-item:hover .case-image {
+  transform: scale(1.05); /* Efecto de agrandar la imagen */
+}
+
+.case-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+}
+
+.case-description {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px;
+}
 /* 
 ---------------------------------------------
 contact
