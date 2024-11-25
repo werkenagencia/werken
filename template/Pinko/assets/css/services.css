@@ -1,70 +1,43 @@
-/* Contenedor general */
-.services-container {
-  background-color: #f8f8f8; /* Fondo gris claro */
+.services-section {
+  background-color: #f5f5f5; /* Fondo gris claro */
   padding: 40px 20px;
-  text-align: center;
 }
 
-.services-container h2 {
-  font-size: 28px;
-  color: #4c63f2; /* Azul para el título principal */
-  margin-bottom: 20px;
-}
-
-/* Estilo para la cuadrícula */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta columnas según el ancho */
-  gap: 20px; /* Espaciado entre elementos */
-  max-width: 1200px;
+  grid-template-columns: 1fr 1fr; /* Dos columnas */
+  gap: 20px; /* Espacio entre bloques */
+  max-width: 80%; /* Texto al 80% del ancho */
   margin: 0 auto;
 }
 
-/* Estilo de cada servicio */
 .service-item {
-  background-color: #fff; /* Fondo blanco */
-  padding: 20px;
-  border: 1px solid #e0e0e0; /* Bordes sutiles */
-  border-radius: 8px; /* Bordes redondeados */
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease; /* Animación suave */
-  text-align: left; /* Alinear contenido a la izquierda */
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc; /* Línea fina */
 }
 
-/* Cambios al pasar el mouse */
-.service-item:hover {
-  background-color: #d2f77f; /* Verde claro */
-  cursor: pointer;
+.service-item:last-child {
+  border-bottom: none; /* Quitar línea al último bloque */
 }
 
-/* Títulos de servicios */
-.service-item h3 {
-  font-size: 20px;
-  color: #4c63f2; /* Azul */
-  margin-bottom: 10px;
+.service-title {
+  font-size: 1.5rem;
   font-weight: bold;
+  color: #4c63f2; /* Azul */
 }
 
-/* Descripción de servicios */
-.service-item p {
-  font-size: 16px;
+.service-description {
+  font-size: 1rem;
   color: #333; /* Gris oscuro */
-  margin: 0;
 }
 
-/* Flechita */
-.service-item .arrow {
-  font-size: 18px;
-  color: #4c63f2;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
+.service-arrow {
+  float: right;
+  font-size: 1.5rem;
+  color: #4c63f2; /* Azul */
   transition: transform 0.3s ease;
 }
 
-/* Flechita en hover */
-.service-item:hover .arrow {
-  transform: translateX(10px); /* Mover ligeramente hacia la derecha */
-  color: #333; /* Cambia a un color gris oscuro */
+.service-item:hover .service-arrow {
+  transform: translateX(5px); /* Mover la flecha ligeramente a la derecha */
 }
