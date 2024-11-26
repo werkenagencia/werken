@@ -1003,7 +1003,7 @@ footer
 --------------------------------------------- 
 */
 footer {
-  background-image: linear-gradient(127deg, #b485ee 0%, #4c63f2 91%);
+  background-color: #4c63f2;
   padding-top: 30px;
 }
 
@@ -1020,7 +1020,7 @@ footer .social li {
 
 footer .social li a {
   color: #9d5bd9;
-   text-align: center;
+  text-align: center;
   background-color: #fff;
   width: 36px;
   height: 36px;
