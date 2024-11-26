@@ -769,103 +769,7 @@ welcome
     margin-bottom: 40px;
   }
 }
-
-
 /* 
----------------------------------------------
-testimonials
---------------------------------------------- 
-*/
-.testimonials-container {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-}
-
-.testimonial-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
-
-.testimonial {
-  display: none;
-  flex: 1;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #333;
-  line-height: 1.8;
-}
-
-.testimonial.active {
-  display: block;
-}
-
-.testimonial blockquote {
-  font-size: 2rem;
-  font-style: italic;
-  margin: 0 auto 1rem auto;
-  position: relative;
-  quotes: "“" "”";
-}
-
-.testimonial blockquote::before {
-  content: open-quote;
-  font-size: 3rem;
-  color: #4c63f2; /* Puedes personalizar este color */
-  position: absolute;
-  top: -10px;
-  left: -10px;
-}
-
-.testimonial blockquote::after {
-  content: close-quote;
-  font-size: 3rem;
-  color: #4c63f2; /* Mismo color que el de arriba */
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-}
-
-.testimonial-author {
-  font-size: 1rem;
-  color: #555;
-}
-
-.arrow-left,
-.arrow-right {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #6c63ff;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.arrow-left:hover {
-  transform: translateX(-10px);
-}
-
-.arrow-right:hover {
-  transform: translateX(10px);
-}
-
-.arrow-left {
-  position: absolute;
-  left: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.arrow-right {
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 ---------------------------------------------
 cases
 --------------------------------------------- 
@@ -954,6 +858,101 @@ cases
   line-height: 1.5;
   text-align: center;
 }
+---------------------------------------------
+testimonials
+--------------------------------------------- 
+.testimonials-container {
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  background-color: #f7f7f7; /* Fondo gris claro */
+  padding: 3rem 0; /* Márgenes arriba y abajo */
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-wrapper {
+  width: 80%; /* Mantiene el texto centrado dentro del contenedor */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.testimonial {
+  display: none;
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial blockquote {
+  font-size: 2rem;
+  font-style: italic;
+  margin: 0 auto 1rem auto;
+  position: relative;
+  quotes: "“" "”";
+}
+
+.testimonial blockquote::before {
+  content: open-quote;
+  font-size: 3rem;
+  color: #6c63ff; /* Personaliza este color si quieres */
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.testimonial blockquote::after {
+  content: close-quote;
+  font-size: 3rem;
+  color: #6c63ff;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+  color: #555;
+}
+
+.arrow-left,
+.arrow-right {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #6c63ff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.arrow-left:hover {
+  transform: translateX(-10px);
+}
+
+.arrow-right:hover {
+  transform: translateX(10px);
+}
+
+.arrow-left {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow-right {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 ---------------------------------------------
 contact
 --------------------------------------------- 
