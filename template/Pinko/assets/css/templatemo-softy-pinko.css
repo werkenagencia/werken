@@ -872,7 +872,7 @@ cultura
 .cultura-block {
   width: 100%; /* Ocupa todo el ancho de la pantalla */
   background-color: white; /* Fondo blanco */
-  padding: 100px 100px; /* Espaciado arriba y abajo, y un poco a los lados */
+  padding: 160px;
   box-sizing: border-box; /* Para asegurar que el padding no afecta el ancho */
 }
 
