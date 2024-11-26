@@ -14,10 +14,11 @@ Table of contents
 04. header
 05. welcome
 06. cases
-07. testimonials
-08. contact
-09. footer
-10. preloader
+07. cultura
+08. testimonials
+09. contact
+10. footer
+11. preloader
 
 --------------------------------------------- */
 /* 
@@ -863,6 +864,25 @@ cases
   font-size: 18px; /* Tamaño de la descripción */
   line-height: 1.5;
   text-align: center;
+}
+
+---------------------------------------------
+cultura
+---------------------------------------------
+.cultura-block {
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  background-color: white; /* Fondo blanco */
+  padding: 50px 20px; /* Espaciado arriba y abajo, y un poco a los lados */
+  box-sizing: border-box; /* Para asegurar que el padding no afecta el ancho */
+}
+
+.cultura-content {
+  width: 80%; /* El texto ocupa el 80% del ancho */
+  margin: 0 auto; /* Centra el bloque de texto */
+  font-size: 16px; /* Tamaño de fuente */
+  line-height: 1.5; /* Espacio entre líneas */
+  text-align: center; /* Centra el texto dentro del bloque */
+  color: #333; /* Color de texto */
 }
 ---------------------------------------------
 testimonials
