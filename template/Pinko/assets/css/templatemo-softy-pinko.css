@@ -868,96 +868,73 @@ cases
 testimonials
 --------------------------------------------- 
 .testimonials-container {
-  width: 100%; /* Ocupa todo el ancho de la pantalla */
-  background-color: #f5f5f5; /* Fondo gris claro */
-  padding: 6rem 0; /* Márgenes arriba y abajo */
-  display: flex;
-  justify-content: center;
+  width: 100%; /* Ocupar todo el ancho de la pantalla */
+  background-color: #f2f2f2; /* Fondo gris claro */
+  display: flex; /* Para centrar contenido */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical (si hay altura fija) */
+  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+  padding: 50px 20px; /* Espacio arriba/abajo y a los lados */
+  box-sizing: border-box; /* Incluye padding en el ancho total */
 }
 
 .testimonial-wrapper {
-  width: 80%; /* Mantiene el texto centrado dentro del contenedor */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
+  max-width: 800px; /* Limita el ancho del contenido */
+  width: 80%; /* Ocupará el 100% dentro del límite */
+  text-align: center; /* Centrar texto dentro */
+  position: relative; /* Para posicionar flechas */
 }
 
 .testimonial {
-  display: none;
-  flex: 1;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #333;
-  line-height: 1.8;
+  display: none; /* Ocultar inicialmente */
 }
 
 .testimonial.active {
-  display: block;
+  display: block; /* Mostrar solo el testimonial activo */
 }
 
-.testimonial blockquote {
-  font-size: 2rem;
-  font-style: italic;
-  margin: 0 auto 1rem auto;
-  position: relative;
-  quotes: "“" "”";
-}
-
-.testimonial blockquote::before {
-  content: open-quote;
-  font-size: 3rem;
-  color: #6c63ff; /* Personaliza este color si quieres */
-  position: absolute;
-  top: -10px;
-  left: -10px;
-}
-
-.testimonial blockquote::after {
-  content: close-quote;
-  font-size: 3rem;
-  color: #6c63ff;
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
+.testimonial-text {
+  font-size: 1.2em; /* Tamaño de letra del texto */
+  color: #333; /* Color del texto */
+  margin-bottom: 15px; /* Espacio entre texto y autor */
 }
 
 .testimonial-author {
-  font-size: 1rem;
-  color: #555;
+  font-weight: bold; /* Destacar el autor */
+  color: #555; /* Color más tenue */
 }
 
 .arrow-left,
 .arrow-right {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #6c63ff;
+  position: absolute;
+  top: 50%; /* Centrado vertical respecto al contenedor */
+  transform: translateY(-50%); /* Ajuste para el centrado exacto */
+  background-color: #4c63f2; /* Color del botón */
+  color: white; /* Color de la flecha */
+  border: none; /* Sin bordes */
+  border-radius: 50%; /* Botón circular */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.arrow-left:hover {
-  transform: translateX(-10px);
-}
-
-.arrow-right:hover {
-  transform: translateX(10px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .arrow-left {
-  position: absolute;
-  left: 5%;
-  top: 50%;
-  transform: translateY(-50%);
+  left: -60px; /* A la izquierda del contenido */
 }
 
 .arrow-right {
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
+  right: -60px; /* A la derecha del contenido */
 }
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: #3b566e; /* Color más oscuro al pasar el mouse */
+}
+
 
 ---------------------------------------------
 contact
