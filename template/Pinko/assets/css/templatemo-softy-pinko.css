@@ -777,63 +777,95 @@ testimonials
 --------------------------------------------- 
 */
 .testimonials-container {
-  position: relative;
-  max-width: 80%;
+  width: 80%;
   margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.testimonial {
+  display: none;
+  flex: 1;
   text-align: center;
   font-size: 1.5rem;
   color: #333;
   line-height: 1.8;
 }
 
-.testimonials-container .arrows {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  font-size: 2.5rem; /* Ajusta el tamaño de las flechas */
-  color: #5a45f2;
-  transition: all 0.3s ease-in-out;
+.testimonial.active {
+  display: block;
 }
 
-.testimonials-container .arrows:hover {
-  transform: translateY(-50%) scale(1.1); /* Efecto al pasar el mouse */
+.testimonial blockquote {
+  font-size: 2rem;
+  font-style: italic;
+  margin: 0 auto 1rem auto;
+  position: relative;
+  quotes: "“" "”";
 }
 
-.testimonials-container .arrow-left {
-  left: 2%; /* Más cerca del borde */
-}
-
-.testimonials-container .arrow-left:hover {
-  transform: translate(-5%, -50%) scale(1.1); /* Se mueve ligeramente hacia la izquierda */
-}
-
-.testimonials-container .arrow-right {
-  right: 2%; /* Más cerca del borde */
-}
-
-.testimonials-container .arrow-right:hover {
-  transform: translate(5%, -50%) scale(1.1); /* Se mueve ligeramente hacia la derecha */
-}
-
-.testimonials-container blockquote {
-  font-size: 2rem; /* Doble tamaño de las comillas */
-  quotes: "«" "»";
-}
-
-.testimonials-container blockquote:before {
+.testimonial blockquote::before {
   content: open-quote;
   font-size: 3rem;
-  vertical-align: -0.5rem;
-  color: #5a45f2;
+  color: #4c63f2; /* Puedes personalizar este color */
+  position: absolute;
+  top: -10px;
+  left: -10px;
 }
 
-.testimonials-container blockquote:after {
+.testimonial blockquote::after {
   content: close-quote;
   font-size: 3rem;
-  vertical-align: -0.5rem;
-  color: #5a45f2;
+  color: #4c63f2; /* Mismo color que el de arriba */
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
 }
+
+.testimonial-author {
+  font-size: 1rem;
+  color: #555;
+}
+
+.arrow-left,
+.arrow-right {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #6c63ff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.arrow-left:hover {
+  transform: translateX(-10px);
+}
+
+.arrow-right:hover {
+  transform: translateX(10px);
+}
+
+.arrow-left {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow-right {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 ---------------------------------------------
 cases
 --------------------------------------------- 
