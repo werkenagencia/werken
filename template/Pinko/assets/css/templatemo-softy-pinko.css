@@ -342,7 +342,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #b485ee;
+  background-color: #d2f77f;
 }
 
 button.main-button {
@@ -363,7 +363,7 @@ button.main-button {
 }
 
 button.main-button:hover {
-  background-color: #b485ee;
+  background-color: #d2f77f;
 }
 
 
@@ -1032,7 +1032,7 @@ footer .social li {
 }
 
 footer .social li a {
-  color: #9d5bd9;
+  color: #333;
   text-align: center;
   background-color: #fff;
   width: 36px;
