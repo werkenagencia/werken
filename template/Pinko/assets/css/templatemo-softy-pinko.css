@@ -865,10 +865,11 @@ cases
   line-height: 1.5;
   text-align: center;
 }
-
+/*
 ---------------------------------------------
 cultura
 ---------------------------------------------
+*/
 .cultura-block {
   width: 100%; /* Ocupa todo el ancho de la pantalla */
   background-color: white; /* Fondo blanco */
@@ -884,9 +885,11 @@ cultura
   text-align: center; /* Centra el texto dentro del bloque */
   color: #333; /* Color de texto */
 }
+/*
 ---------------------------------------------
 testimonials
 --------------------------------------------- 
+*/
 .testimonials-container {
   width: 100%; /* Ocupar todo el ancho de la pantalla */
   background-color: #f2f2f2; /* Fondo gris claro */
@@ -900,7 +903,7 @@ testimonials
 
 .testimonial-wrapper {
   max-width: 800px; /* Limita el ancho del contenido */
-  width: 80%; /* Ocupará el 100% dentro del límite */
+  width: 100%; /* Ocupará el 100% dentro del límite */
   text-align: center; /* Centrar texto dentro */
   position: relative; /* Para posicionar flechas */
 }
@@ -954,8 +957,7 @@ testimonials
 .arrow-right:hover {
   background-color: #3b566e; /* Color más oscuro al pasar el mouse */
 }
-
-
+/*
 ---------------------------------------------
 contact
 --------------------------------------------- 
