@@ -29,3 +29,10 @@
   color: #333; /* Gris oscuro */
   margin: 0;
 }
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Una columna */
+  }
+}
