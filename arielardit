@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gacetilla de Prensa - Ariel Ardit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .header {
+            text-align: left;
+            border-left: 4px solid black;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin: 10px 0 20px;
+        }
+
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .quote {
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            color: #ffffff;
+            background-color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: #444;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <strong>Gacetilla de prensa</strong>
+        </div>
+
+        <h1>ARIEL ARDIT PRESENTA “ASÍ”<br>SU NUEVO DISCO DE CLÁSICOS DE SANDRO</h1>
+
+        <div class="image">
+            <img src="tu-imagen.jpg" alt="Ariel Ardit presenta 'Así'">
+        </div>
+
+        <p style="text-align:center; font-weight:bold;">Martes 19 de agosto 20h<br>Teatro Gran Rex, Av. Corrientes 857, CABA<br>Entradas por Ticketek</p>
+
+        <p>Animándose a más, Ariel Ardit hace una pausa en el tango, por primera vez, para rendir homenaje a Sandro. Con su inconfundible estilo y su calidad interpretativa, el cantante presenta su nuevo disco <strong>"Así"</strong>, en el que reinventa los clásicos del ícono de la canción romántica de América.</p>
+
+        <p>El álbum, con arreglos de la talentosa pianista Noelia Sinkunas, trae un formato musical novedoso para Ardit, sin bandoneón y con batería: un desafío que a la vez resalta su destreza vocal y artística.</p>
+
+        <p>Ariel Ardit presenta <strong>"Así"</strong> en el Teatro Gran Rex el próximo 19 de agosto, cuando Sandro cumpliría 80 años. Una noche especial que promete conectarnos con la pasión de las canciones más entrañables del Gitano, en la voz de uno de los grandes referentes de la música argentina actual.</p>
+
+        <div class="quote">
+            Dice Ariel Ardit:<br>
+            “El magnetismo de Sandro en el escenario y la conexión única que lograba con su público, son inigualables. Escucharlo cantar era sentir la pasión que ponía en cada interpretación. Sandro no es solo un ícono de la música argentina; es una leyenda viva que nos sigue inspirando. Grabar y cantar en vivo sus canciones es un honor y un gran desafío que encaro con profundo respeto hacia su arte y hacia sus fieles fans.”
+        </div>
+
+        <a class="btn" href="#">Ver video trailer</a>
+        <a class="btn" href="#">Escuchá el disco en Spotify</a>
+
+        <h2>Lista de temas</h2>
+        <ul>
+            <li>Así</li>
+            <li>Porque yo te amo</li>
+            <li>Penumbras</li>
+            <li>Rosa… Rosa</li>
+            <li>El maniquí</li>
+            <li>Las manos</li>
+            <li>Una muchacha y una guitarra</li>
+            <li>Hay mucha agitación</li>
+            <li>Tengo</li>
+            <li>Querida</li>
+            <li>Después de la guerra</li>
+            <li>Quiero llenarme de ti</li>
+        </ul>
+
+        <a class="btn" href="#">Kit de prensa</a>
+
+        <h2>Sobre Ariel Ardit</h2>
+        <p>Con 25 años de carrera y 8 discos editados, Ariel Ardit se consolidó como uno de los grandes exponentes del tango argentino. Su trayectoria ha sido reconocida con un Premio Konex Platino y dos Premios Carlos Gardel, además de dos nominaciones al Latin Grammy.</p>
+        
+        <div class="footer">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook">Facebook</a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram">Instagram</a>
+            <p>www.werkenagencia.com | info@werkenagencia.com<br>
+            Julieta Erdozain (+34) 627 90 79 56 | Antonella Bellino (+41) 795 83 14 62</p>
+        </div>
+    </div>
+</body>
+</html>
