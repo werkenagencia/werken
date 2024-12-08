@@ -34,10 +34,33 @@
             margin-bottom: 20px;
         }
 
-        h1 {
-            font-size: 30px;
-            text-align: center;
-            margin: 10px 0 20px;
+        .presentacion {
+            text-align: center; /* Centra todo el contenido */
+            font-family: Arial, sans-serif; /* Familia de fuente básica */
+        }
+
+        .presentacion h1 {
+            font-size: 36px; /* Tamaño del título principal */
+            font-weight: bold; /* Negrita */
+            margin: 0; /* Sin margen extra */
+        }
+
+        .presentacion h2 {
+            font-size: 20px; /* Tamaño del subtítulo */
+            font-weight: normal; /* Sin negrita */
+            margin: 10px 0; /* Espaciado vertical */
+        }
+
+        .presentacion h3 {
+            font-size: 28px; /* Tamaño del título en negrita */
+            font-weight: bold; /* Negrita */
+            margin: 10px 0; /* Espaciado vertical */
+        }
+
+        .presentacion p {
+            font-size: 14px; /* Tamaño del texto */
+            font-weight: bold; /* Negrita */
+            margin: 20px 0 0; /* Margen superior para separación */
         }
 
         .image {
@@ -85,12 +108,12 @@
 
         .btn {
             display: block;
-            width: auto;
+            width: 250;
             text-align: center;
             margin: 20px auto;
             padding: 10px 15px;
             color: #ffffff;
-            background-color: #c03028;
+            background-color: #d20329;
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
@@ -109,10 +132,12 @@
             <strong>Gacetilla de prensa</strong>
         </div>
 
-        <h1>ARIEL ARDIT</h1> 
-        <p style="text-align:center; font-weight:bold; font-size: 14px;">PRESENTA</p> 
-        <h1>"ASÍ"</h1>
-        <p style="text-align:center; font-weight:bold; font-size: 20px;">SU NUEVO DISCO DE CLÁSICOS DE SANDRO</p>   
+        <div class="presentacion">
+         <h1>ARIEL ARDIT</h1>
+         <h2>PRESENTA</h2>
+         <h3>“ASÍ”</h3>
+         <p>SU NUEVO DISCO DE CLÁSICOS DE SANDRO</p>
+        </div>   
 
         <div class="image">
             <img src="tapa.jpg" alt="Ariel Ardit presenta 'Así'">
