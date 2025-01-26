@@ -638,6 +638,89 @@ header
   }
 }
 
+/* Botón hamburguesa */
+.menu-trigger {
+  display: none; /* Por defecto, no se muestra */
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  z-index: 101;
+}
+
+.menu-trigger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Mostrar el botón en pantallas pequeñas */
+@media (max-width: 991px) {
+  .menu-trigger {
+    display: block;
+  }
+}
+
+/* Menú móvil cerrado por defecto */
+.nav {
+  display: none;
+  flex-direction: column;
+  background: #4c63f2;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav.active {
+  display: flex;
+}
+
+.nav li {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+.nav li:last-child {
+  border-bottom: none;
+}
+
+.nav li a {
+  color: #fff;
+  padding: 15px;
+  display: block;
+  font-size: 18px;
+}
+
+.nav li a:hover {
+  background: #3b566e;
+}
+
+/* Estilo del menú en pantallas grandes */
+@media (min-width: 992px) {
+  .nav {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: none;
+    box-shadow: none;
+  }
+
+  .nav li {
+    border-bottom: none;
+  }
+
+  .nav li a {
+    padding: 0;
+    color: #ffffff;
+  }
+}
+
 /* Flecha blanca animada */
 .scroll-arrow {
   position: absolute;
