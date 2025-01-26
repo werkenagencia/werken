@@ -370,19 +370,15 @@ button.main-button:hover {
 /* 
 ---------------------------------------------
 header
---------------------------------------------- 
+---------------------------------------------
 */
 .header-area {
-  width: 100vw;
   position: fixed;
-  top: 0px;
+  top: 30px;
   left: 0px;
   right: 0px;
   z-index: 100;
   height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -391,23 +387,22 @@ header
 
 .header-area .main-nav {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  border-radius: 40px;
   min-height: 80px;
   background: #4c63f2;
-  display: flex;
-  gap: 30px;
-  align-items: center;
 }
 
 .header-area .main-nav .logo {
-  margin-right: auto;
+  float: left;
+  margin-top: 37px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  margin-left: 30px;
 }
 
 .header-area .main-nav .logo img {
-  max-width: 150px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -415,11 +410,10 @@ header
 }
 
 .header-area .main-nav .nav {
-  display: flex;
-  gap: 20px; /* Espaciado entre los enlaces */
-  list-style: none; /* Quita los puntos de la lista */
-  margin: 0;
-  padding: 0;
+  float: right;
+  margin-top: 27px;
+  margin-left: 0px;
+  margin-right: 30px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -439,9 +433,9 @@ header
 
 .header-area .main-nav .nav li a {
   display: block;
-  font-weight: 600;
-  font-size: 15px;
-  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  color: #4c63f2;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -561,11 +555,11 @@ header
 }
 
 .header-area.header-sticky .nav li a {
-  color: #ffffff;
+  color: #1e1e1e;
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #d2f77f;
+  color: #ff589e;
 }
 
 @media (max-width: 1200px) {
@@ -638,117 +632,6 @@ header
   }
 }
 
-/* Botón hamburguesa */
-.menu-trigger {
-  display: none; /* Por defecto, no se muestra */
-  cursor: pointer;
-  position: absolute;
-  top: 25px;
-  right: 20px;
-  z-index: 101;
-}
-
-.menu-trigger span {
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Mostrar el botón en pantallas pequeñas */
-@media (max-width: 991px) {
-  .menu-trigger {
-    display: block;
-  }
-}
-
-/* Menú móvil cerrado por defecto */
-.nav {
-  display: none;
-  flex-direction: column;
-  background: #4c63f2;
-  position: absolute;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.nav.active {
-  display: flex;
-}
-
-.nav li {
-  text-align: center;
-  border-bottom: 1px solid #fff;
-}
-
-.nav li:last-child {
-  border-bottom: none;
-}
-
-.nav li a {
-  color: #fff;
-  padding: 15px;
-  display: block;
-  font-size: 18px;
-}
-
-.nav li a:hover {
-  background: #3b566e;
-}
-
-/* Estilo del menú en pantallas grandes */
-@media (min-width: 992px) {
-  .nav {
-    display: flex !important;
-    flex-direction: row;
-    position: static;
-    background: none;
-    box-shadow: none;
-  }
-
-  .nav li {
-    border-bottom: none;
-  }
-
-  .nav li a {
-    padding: 0;
-    color: #ffffff;
-  }
-}
-
-/* Flecha blanca animada */
-.scroll-arrow {
-  position: absolute;
-  bottom: 20px; /* Ajusta la posición según tu diseño */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 32px; /* Tamaño de la flecha */
-  color: white; /* Color de la flecha */
-  text-decoration: none; /* Quitar subrayado */
-  animation: bounce 1.5s infinite; /* Animación de rebote */
-  transition: transform 0.3s ease;
-  z-index: 10; /* Asegura que esté por encima del fondo */
-}
-
-/* Efecto al pasar el mouse */
-.scroll-arrow:hover {
-  transform: translate(-50%, 5px); /* Movimiento hacia abajo */
-}
-
-/* Animación de rebote */
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
 /* 
 ---------------------------------------------
 welcome
