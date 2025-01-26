@@ -961,12 +961,25 @@ cultura
 }
 
 .cultura-content {
-  width: 70%; /* El texto ocupa el 80% del ancho */
+  width: 70%; /* El texto ocupa el 70% del ancho */
   margin: 0 auto; /* Centra el bloque de texto */
   font-size: 18px; /* Tamaño de fuente */
   line-height: 1.5; /* Espacio entre líneas */
   text-align: center; /* Centra el texto dentro del bloque */
   color: #333; /* Color de texto */
+}
+
+/* Ajustes específicos para pantallas más pequeñas */
+@media (max-width: 767px) { /* Para móviles */
+  .cultura-content {
+    width: 90%; /* Ocupa casi todo el ancho del móvil, dejando un pequeño margen */
+    padding: 0 5%; /* Margen interno para un espacio uniforme */
+    font-size: 16px; /* Reduce ligeramente el tamaño de la fuente */
+  }
+
+  .cultura-block {
+    padding: 80px 20px; /* Reduce el padding en móviles para evitar mucho espacio */
+  }
 }
 /*
 ---------------------------------------------
