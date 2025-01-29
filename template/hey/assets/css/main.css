@@ -1443,7 +1443,7 @@ input, select, textarea {
 			transform: translateX(0);
 			width: 50%;
 			position: relative;
-			opacity: 1.0;
+			opacity: 0.0;
 		}
 
 			.gallery article .image {
