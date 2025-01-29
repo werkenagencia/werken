@@ -26,6 +26,7 @@
 
 .service-description {
   font-size: 1rem;
+  text-align: left;
   color: #39454b; /* Gris oscuro */
   margin: 0;
 }
