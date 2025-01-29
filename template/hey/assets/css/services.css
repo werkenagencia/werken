@@ -38,3 +38,9 @@
     grid-template-columns: 1fr; /* Una columna */
   }
 }
+
+@media screen and (min-width: 1024px) { /* Se aplica en pantallas grandes */
+  .services-section {
+    padding: 100px 100px; /* Aumenta el espacio arriba y abajo */
+  }
+}
