@@ -2332,3 +2332,15 @@ input, select, textarea {
 .whatsapp-button img:hover {
     transform: scale(1.1);
 }
+
+/* tag */
+.tag {
+    display: inline-block;
+    background-color: #f3f3f3; /* Color de fondo */
+    color: #333; /* Color del texto */
+    padding: 4px 8px; /* Espaciado interno */
+    border-radius: 12px; /* Bordes redondeados */
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px; /* Espaciado entre etiquetas */
+}
