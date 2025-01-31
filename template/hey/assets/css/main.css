@@ -2026,17 +2026,17 @@ input, select, textarea {
 			}
 
 			.main.style2.inactive.left > .content {
-				-moz-transform: translateX(-100%);
-				-webkit-transform: translateX(-100%);
-				-ms-transform: translateX(-100%);
-				transform: translateX(-100%);
+				-moz-transform: translateX(-50%);
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				transform: translateX(-50%);
 			}
 
 			.main.style2.inactive.right > .content {
-				-moz-transform: translateX(100%);
-				-webkit-transform: translateX(100%);
-				-ms-transform: translateX(100%);
-				transform: translateX(100%);
+				-moz-transform: translateX(50%);
+				-webkit-transform: translateX(50%);
+				-ms-transform: translateX(50%);
+				transform: translateX(50%);
 			}
 
 		.main.style3 {
