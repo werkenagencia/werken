@@ -638,7 +638,12 @@ input, select, textarea {
 
 			.box {
 				padding: 1em;
-				white-space: pre-line; 
+				white-space: pre-line;
+				padding: 1em;
+			        white-space: pre-line !important; /* Forzar la propiedad */
+			        display: block !important; /* Asegurar que no haya flexbox interfiriendo */
+			        word-wrap: break-word;
+			        overflow-wrap: break-word;		
 			}
 
 				.box.style2 {
