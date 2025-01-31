@@ -638,6 +638,7 @@ input, select, textarea {
 
 			.box {
 				padding: 1em;
+				white-space: pre-line; 
 			}
 
 				.box.style2 {
