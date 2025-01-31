@@ -1,0 +1,60 @@
+/* Estilos generales */
+.team {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Contenedor flexible */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Se ajusta en pantallas pequeñas */
+}
+
+/* Cada miembro del equipo */
+.team-member {
+    text-align: center;
+    max-width: 250px;
+}
+
+/* Estilos de la imagen */
+.team-image {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imágenes dentro del círculo */
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos del nombre */
+.team-member h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Estilos del puesto */
+.team-member p {
+    font-size: 1em;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Responsive: en pantallas pequeñas, los miembros se apilan */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
