@@ -2351,7 +2351,7 @@ input, select, textarea {
     left: 0;
     width: 100%;
     height: 150%;
-    background-image: url('../../images/div.jpg'); /* Reemplaza con la URL de tu imagen */
+    background-image: url('/template/hey/images/div.jpg'); /* Reemplaza con la URL de tu imagen */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Activa el efecto parallax */
