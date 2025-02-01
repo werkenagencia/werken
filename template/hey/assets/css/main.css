@@ -2015,21 +2015,20 @@ input, select, textarea {
 				-moz-justify-content: -moz-flex-start;
 				-webkit-justify-content: -webkit-flex-start;
 				-ms-justify-content: -ms-flex-start;
-				justify-content: flex-start;
+				justify-content: center;
+				opacity: 1; /* Visible */
 			}
 
 			.main.style2.right {
 				-moz-justify-content: -moz-flex-end;
 				-webkit-justify-content: -webkit-flex-end;
 				-ms-justify-content: -ms-flex-end;
-				justify-content: flex-end;
+				justify-content: center;
 			}
 
 			.main.style2.inactive.left > .content {
-				-moz-transform: translateX(-50%);
-				-webkit-transform: translateX(-50%);
-				-ms-transform: translateX(-50%);
-				transform: translateX(-50%);
+				opacity: 0; /* Inicialmente invisible */
+                                transition: opacity 1s ease-in-out; /* Solo transición de opacidad */
 			}
 
 			.main.style2.inactive.right > .content {
