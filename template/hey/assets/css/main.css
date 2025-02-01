@@ -2024,18 +2024,17 @@ input, select, textarea {
 				-webkit-justify-content: -webkit-flex-end;
 				-ms-justify-content: -ms-flex-end;
 				justify-content: center;
+				opacity: 1; /* Visible */
 			}
 
 			.main.style2.inactive.left > .content {
 				opacity: 0; /* Inicialmente invisible */
-                                transition: opacity 1s ease-in-out; /* Solo transición de opacidad */
+                                transition: opacity 3s ease-in-out; /* Solo transición de opacidad */
 			}
 
 			.main.style2.inactive.right > .content {
-				-moz-transform: translateX(50%);
-				-webkit-transform: translateX(50%);
-				-ms-transform: translateX(50%);
-				transform: translateX(50%);
+				opacity: 0; /* Inicialmente invisible */
+                                transition: opacity 3s ease-in-out; /* Solo transición de opacidad */
 			}
 
 		.main.style3 {
