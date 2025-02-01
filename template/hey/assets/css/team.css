@@ -9,7 +9,7 @@
 .team-container {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 60px; /* Aumenta el espacio entre los miembros */
     flex-wrap: wrap; /* Se ajusta en pantallas pequeñas */
 }
 
@@ -17,6 +17,7 @@
 .team-member {
     text-align: center;
     max-width: 250px;
+    margin-top: 30px; /* Añadir espacio extra entre los miembros */
 }
 
 /* Estilos de la imagen */
@@ -42,6 +43,7 @@
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 15px;
+    white-space: nowrap; /* Evita que el nombre se divida en dos líneas */
 }
 
 /* Estilos del puesto */
@@ -56,5 +58,9 @@
     .team-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .team-member {
+        margin-top: 15px; /* Menos espacio entre los miembros en pantallas pequeñas */
     }
 }
