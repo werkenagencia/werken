@@ -1,0 +1,28 @@
+name: Compile SCSS to CSS
+
+on:
+  push:
+    branches:
+      - main  # Cambia a la rama que usas en GitHub
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v3
+
+      - name: Instalar Sass
+        run: npm install -g sass
+
+      - name: Compilar SCSS a CSS
+        run: sass assets/sass:assets/css
+
+      - name: Subir cambios compilados
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add assets/css
+          git commit -m "Compilación automática de SCSS"
+          git push
