@@ -2351,10 +2351,11 @@ input, select, textarea {
     left: 0;
     width: 100%;
     height: 150%;
-    background-image: url('/template/hey/images/div.jpg'); /* Reemplaza con la URL de tu imagen */
-    background-size: cover;
+    background-image: url('/template/hey/images/div.jpg');
+    background-size: contain;
     background-position: center;
     background-attachment: fixed; /* Activa el efecto parallax */
+    background-color: red;
     will-change: transform;
     transform: translate3d(0, 0, 0);
     z-index: -1;
