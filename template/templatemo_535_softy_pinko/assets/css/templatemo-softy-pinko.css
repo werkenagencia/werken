@@ -113,13 +113,13 @@ body {
 }
 
 ::selection {
-  background: #ff589e;
-  color: #fff;
+  background: #a8d08d; /* Verde clásico para la selección */
+  color: inherit; /* Mantiene el color del texto original */
 }
 
 ::-moz-selection {
-  background: #ff589e;
-  color: #fff;
+  background: #a8d08d; /* Verde clásico para la selección */
+  color: inherit; /* Mantiene el color del texto original */
 }
 
 .section {
@@ -448,7 +448,8 @@ header
 }
 
 .header-area .main-nav .nav li a:hover {
-  color: #ff589e;
+  color: inherit; /* Mantiene el mismo color del texto */
+  font-weight: bold; /* Aplica negrita al texto */
 }
 
 .header-area .main-nav .menu-trigger {
@@ -560,7 +561,8 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #ff589e;
+  color: inherit; /* Mantiene el mismo color del texto */
+  font-weight: bold; /* Aplica negrita al texto */
 }
 
 @media (max-width: 1200px) {
@@ -1351,7 +1353,8 @@ blog
 }
 
 .blog-post-thumb h3 a:hover {
-  color: #ff589e;
+  color: inherit; /* Mantiene el mismo color del texto */
+  font-weight: bold; /* Aplica negrita al texto */
 }
 
 .blog-post-thumb .text {
