@@ -332,9 +332,10 @@ a.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #8261ee;
+  background-color: transparent; /* Hace el botón transparente */
+  border: 2px solid #8261ee; /* Borde violeta */
   text-transform: uppercase;
-  color: #fff;
+  color: #8261ee; /* Texto del mismo color que el borde */
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -343,7 +344,8 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #ff589e;
+  background-color: #8261ee; /* Se rellena de violeta al pasar el cursor */
+  color: #fff; /* Texto en blanco */
 }
 
 button.main-button {
