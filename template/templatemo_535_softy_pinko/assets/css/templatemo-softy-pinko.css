@@ -1445,7 +1445,9 @@ footer
 --------------------------------------------- 
 */
 footer {
-  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  background-image: url('../images/footer.png');
+  background-size: cover; /* Hace que la imagen cubra todo el footer */
+  background-position: center; /* Centra la imagen */
   padding-top: 30px;
 }
 
