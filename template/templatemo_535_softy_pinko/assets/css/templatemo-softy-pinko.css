@@ -826,8 +826,8 @@ features
 
 .home-feature {
   padding-bottom: 0px;
-  padding-top: 30px;
-  margin-top: -220px;
+  padding-top: 100px; /* Agregar espacio superior en lugar de margin negativo */
+  margin-top: 0px;
   z-index: 9;
 }
 
