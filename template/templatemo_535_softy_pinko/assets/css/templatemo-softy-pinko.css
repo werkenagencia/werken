@@ -777,7 +777,7 @@ features
 }
 
 .features-small-item:hover .icon {
-  background-color: #8261ee;  /* Fondo violeta al pasar el cursor */
+  transform: scale(1.1); /* Aumenta el tamaño un 10% */
 }
 
 .features-small-item .icon {
