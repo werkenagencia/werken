@@ -777,7 +777,7 @@ features
 }
 
 .features-small-item:hover .icon {
-  background-color: #ff589e;
+  background-color: #8261ee;  /* Fondo violeta al pasar el cursor */
 }
 
 .features-small-item .icon {
@@ -791,7 +791,7 @@ features
   margin: auto;
   position: relative;
   margin-bottom: 30px;
-  background: #8261ee;
+  background: transparent;  /* Fondo transparente por defecto */
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
