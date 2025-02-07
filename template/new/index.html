@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werken Agencia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .full-screen {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .black-bg { background-color: black; }
+        .white-bg { background-color: white; color: black; }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+        }
+        .scroll-indicator {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            opacity: 1;
+            animation: fadeUp 2s infinite;
+        }
+        @keyframes fadeUp {
+            0% { opacity: 1; transform: translateY(0); }
+            50% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+        }
+        .column {
+            text-align: left;
+        }
+        .client-list {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            border-top: 1px solid lightgray;
+            padding-top: 20px;
+        }
+        .dynamic-cards {
+            display: flex;
+            gap: 20px;
+        }
+        .card {
+            width: 150px;
+            height: 200px;
+            background: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotateX(90deg);
+            transition: transform 0.5s ease-in-out;
+        }
+        .card:hover {
+            transform: rotateX(0deg);
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        .contact-info a:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Werken Logo" class="logo">
+    </header>
+    
+    <section id="inicio" class="full-screen black-bg">
+        <h1 id="scroll-text">Las palabras no dan lo mismo</h1>
+        <span class="scroll-indicator">[ Scroll ]</span>
+    </section>
+    
+    <section id="que-hacemos" class="full-screen white-bg">
+        <h2>Qué hacemos</h2>
+        <p class="description">Somos un equipo de profesionales en constante actualización...</p>
+        <div class="services">
+            <div class="column">
+                <h3>Diseño</h3>
+                <ul>
+                    <li>Branding</li>
+                    <li>Contenido</li>
+                    <li>Copywriting</li>
+                    <li>Diseño Web</li>
+                    <li>Diseño Audiovisual</li>
+                    <li>Email Marketing</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Social</h3>
+                <ul>
+                    <li>Branding</li>
+                    <li>Contenido</li>
+                    <li>Copywriting</li>
+                    <li>Diseño Web</li>
+                    <li>Diseño Audiovisual</li>
+                    <li>Email Marketing</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Ads</h3>
+                <ul>
+                    <li>Branding</li>
+                    <li>Contenido</li>
+                    <li>Copywriting</li>
+                    <li>Diseño Web</li>
+                    <li>Diseño Audiovisual</li>
+                    <li>Email Marketing</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Comunicación</h3>
+                <ul>
+                    <li>Branding</li>
+                    <li>Contenido</li>
+                    <li>Copywriting</li>
+                    <li>Diseño Web</li>
+                    <li>Diseño Audiovisual</li>
+                    <li>Email Marketing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="como-lo-hacemos" class="full-screen black-bg">
+        <h2>Cómo lo hacemos</h2>
+        <div class="dynamic-cards">
+            <div class="card">Estrategia</div>
+            <div class="card">Creatividad</div>
+            <div class="card">Innovación</div>
+            <div class="card">Resultados</div>
+        </div>
+    </section>
+    
+    <section id="confiaron" class="full-screen white-bg">
+        <h2>Confiaron</h2>
+        <p class="description">Algunos proyectos con los que hemos trabajado estos años.</p>
+        <div class="client-list">
+            <div class="column">
+                <p>Ariel Ardit</p>
+                <p>Festival Bendita Tu</p>
+                <p>Festival de Tango Feminista</p>
+                <p>Melaní Luraschi</p>
+            </div>
+            <div class="column">
+                <p>Ariel Ardit</p>
+                <p>Festival Bendita Tu</p>
+                <p>Festival de Tango Feminista</p>
+                <p>Melaní Luraschi</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacto" class="full-screen black-bg">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+            <div>
+                <h3>Mail y Teléfono</h3>
+                <p>+34 627 90 79 56</p>
+                <p>hola@werkenagencia.com</p>
+            </div>
+            <div>
+                <h3>Social</h3>
+                <p><a href="https://instagram.com" target="_blank">Instagram</a></p>
+                <p><a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+        <footer>
+            <p>WerkenAgencia 2025 &copy;</p>
+            <img src="logo.png" alt="Werken Logo">
+        </footer>
+    </section>
+</body>
+</html>
