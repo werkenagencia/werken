@@ -717,7 +717,7 @@ welcome
 @media (max-width: 768px) {
   .welcome-area .header-text h1 {
     font-size: 40px; /* Se ajusta más para pantallas pequeñas */
-    line-height: 1.15; /* Ajuste fino del espaciado */
+    margin-bottom: 5px; /* Espaciado más compacto */ 
   }
 
   .welcome-area .header-text p {
@@ -733,7 +733,7 @@ welcome
 @media (max-width: 576px) {
   .welcome-area .header-text h1 {
     font-size: 30px; /* Tamaño ideal para móviles */
-    line-height: 1.2;
+    margin-bottom: 3px;
   }
 
   .welcome-area .header-text p {
