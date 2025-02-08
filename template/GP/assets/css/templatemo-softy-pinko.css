@@ -716,7 +716,8 @@ welcome
 
 @media (max-width: 768px) {
   .welcome-area .header-text h1 {
-    font-size: 36px; /* Se ajusta más para pantallas pequeñas */
+    font-size: 40px; /* Se ajusta más para pantallas pequeñas */
+    line-height: 1.15; /* Ajuste fino del espaciado */
   }
 
   .welcome-area .header-text p {
@@ -725,13 +726,14 @@ welcome
   }
 
   .parallax-img {
-    width: 120px; /* Aún más pequeño en móviles */
+    width: 100px; /* Aún más pequeño en móviles */
   }
 }
 
 @media (max-width: 576px) {
   .welcome-area .header-text h1 {
-    font-size: 28px; /* Tamaño ideal para móviles */
+    font-size: 30px; /* Tamaño ideal para móviles */
+    line-height: 1.2;
   }
 
   .welcome-area .header-text p {
@@ -740,6 +742,7 @@ welcome
 
   /* Ocultar imágenes parallax si interfieren demasiado */
   .parallax-img {
+    width: 80px; /* Imágenes pequeñas pero visibles */
     display: none;
   }
 }
