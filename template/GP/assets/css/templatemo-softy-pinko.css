@@ -672,6 +672,9 @@ welcome
 }
 
 .welcome-area .header-text p {
+  max-width: 600px; /* Limita el ancho para que el texto no sea demasiado largo */
+  margin: 0 auto; /* Centra el texto */
+  text-align: center; /* Asegura que quede bien alineado */
   font-weight: 400;
   font-size: 17px;
   color: #000000;
@@ -721,6 +724,7 @@ welcome
   }
 
   .welcome-area .header-text p {
+    max-width: 80%; /* Reduce el ancho para que no quede tan extendido */
     font-size: 14px;
     line-height: 1.4;
   }
