@@ -21,6 +21,8 @@ Table of contents
 11. footer
 12. preloader
 13. button (HEY)
+14. services
+15. vision
 
 --------------------------------------------- */
 /* 
@@ -360,7 +362,7 @@ button.main-button {
   font-size: 13px;
   border-radius: 0;
   padding: 12px 20px;
-  background-color: #transparent; /* Hace el botón transparente */
+  background-color: transparent; /* Hace el botón transparente */
   border: 1px solid #242424; /* Borde gris oscuro */
   text-transform: uppercase;
   color: #242424; /* Texto gris oscuro */
@@ -578,36 +580,75 @@ header
   font-weight: bold; /* Aplica negrita al texto */
 }
 
-/* Ajustes específicos para dispositivos móviles */
-@media (max-width: 768px) {
-  .header-text h1 {
-    font-size: 8vw;
+@media (max-width: 1200px) {
+  .header-area .main-nav .nav li {
+    padding-left: 12px;
+    padding-right: 12px;
   }
-
-  .header-text p {
-    font-size: 3.5vw;
-  }
-
-  .parallax-img {
-    width: 60vw;
-    max-width: 250px;
-  }
-
-  .parallax-img.one {
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .parallax-img.two {
-    bottom: 5%;
-    right: 50%;
-    transform: translateX(50%);
+  .header-area .main-nav:before {
+    display: none;
   }
 }
 
+@media (max-width: 991px) {
+  .header-area {
+    padding: 0px 15px;
+    height: 80px;
+    box-shadow: none;
+    text-align: center;
+  }
+  .header-area .container {
+    padding: 0px;
+  }
+  .header-area .logo {
+    margin-top: 27px !important;
+    margin-left: 30px;
+  }
+  .header-area .menu-trigger {
+    display: block !important;
+  }
+  .header-area .main-nav {
+    overflow: hidden;
+  }
+  .header-area .main-nav .nav {
+    float: none;
+    width: 100%;
+    margin-top: 80px !important;
+    display: none;
+    -webkit-transition: all 0s ease 0s;
+    -moz-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+    margin-left: 0px;
+  }
+  .header-area .main-nav .nav li:first-child {
+    border-top: 1px solid #eee;
+  }
+  .header-area .main-nav .nav li {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .header-area .main-nav .nav li a {
+    height: 50px !important;
+    line-height: 50px !important;
+    padding: 0px !important;
+    border: none !important;
+    background: #fff !important;
+    color: #3B566E !important;
+  }
+  .header-area .main-nav .nav li a:hover {
+    background: #eee !important;
+  }
+}
 
- 
+@media (min-width: 992px) {
+  .header-area .main-nav .nav {
+    display: flex !important;
+  }
+}
 
 /* 
 ---------------------------------------------
@@ -672,7 +713,7 @@ welcome
 }
 
 .welcome-area .header-text p {
-  max-width: 600px; /* Limita el ancho para que el texto no sea demasiado largo */
+  max-width: 500px; /* Limita el ancho para que el texto no sea demasiado largo */
   margin: 0 auto; /* Centra el texto */
   text-align: center; /* Asegura que quede bien alineado */
   font-weight: 400;
@@ -748,7 +789,6 @@ welcome
     width: 80px; /* Imágenes pequeñas pero visibles */
   }
 }
-
 /* 
 ---------------------------------------------
 features
@@ -1522,7 +1562,7 @@ footer .social li {
 footer .social li a {
   color: #ffffff;
    text-align: center;
-  background-color: #transparent;
+  background-color: transparent;
   width: 36px;
   height: 36px;
   line-height: 36px;
@@ -1650,8 +1690,118 @@ preloader
   }
 }
 
+/* 
+---------------------------------------------
+linea
+--------------------------------------------- 
+*/
 .linea {
   width: 2em;  /* Ancho equivalente a dos letras */
   height: 4px; /* Grosor medio */
   background-color: #1649ff;
 }
+
+/* 
+---------------------------------------------
+services
+--------------------------------------------- 
+*/
+<style>
+.services-section {
+    background-color: white;
+    color: black;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px; /* Agrega margen inferior para separación */
+}
+.services-container {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+}
+.services-left {
+    width: 16.66%; /* 2 columnas de 12 */
+    margin-left: 100px; /* Margen ajustado */
+}
+.services-left h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.services-left ul {
+    list-style: none;
+    padding: 0;
+}
+.services-left li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: font-weight 0.3s ease;
+    position: relative;
+}
+.services-left li:hover, .services-left li.active {
+    font-weight: bold;
+}
+.services-left li:hover::before,
+.services-left li.active::before {
+    content: '\2022'; /* Círculo sólido */
+    position: absolute;
+    left: -10px; /* Ajustado para que se vea */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: black;
+    opacity: 1; /* Asegúrate de que sea visible */
+}
+.services-right {
+    width: 83.33%; /* 10 columnas de 12 */
+    margin-top: 60px; /* Ajusta este valor según lo que necesites */
+    margin-left: 100px;
+}
+.services-right p {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline; /* Alinea los elementos según la línea base */
+    margin-bottom: 20px; /* Un poco menos de margen */
+    gap: 20px; /* Espacio entre título y descripción */
+    transition: font-size 0.3s ease; /* Agrega transición suave */
+}
+.services-right p:hover {
+  font-size: 24.2px; /* Aumenta un 10% (22px * 1.1) */
+}
+.services-right small {
+    font-size: 16px;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-in.show {
+    opacity: 1;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        text-align: left;
+    }
+    .services-left ul {
+        display: flex;
+        gap: 15px;
+    }
+    .services-right {
+        margin-top: 10px;
+    }
+}
+</style>
+
+/* 
+---------------------------------------------
+vision
+--------------------------------------------- 
+*/
