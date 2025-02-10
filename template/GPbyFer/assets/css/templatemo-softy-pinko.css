@@ -144,7 +144,7 @@ body {
 }
 
 .section.vision {
-  background: #908f8f;
+  background: #e3e2e2;
   display: flex; /* Activa flexbox */
   align-items: center; /* Centra verticalmente */
   justify-content: center; /* Centra horizontalmente */
@@ -1723,6 +1723,16 @@ services
 */
 <style>
 
+.service-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;  /* Tamaño de fuente más pequeño */
+  font-weight: 400;
+  color: #666; /* Color más claro para las descripciones */
+  margin-top: 8px;
+  line-height: 1.5; /* Espaciado más amplio */
+  display: none; /* Ocultar inicialmente las descripciones */
+}
+
 /* Contenedor principal con grid */
 .services-container {
   display: grid;
@@ -1764,6 +1774,7 @@ h3 {
 
 .services-list li {
   cursor: pointer;
+  color: black;
   font-size: 24px;
   font-weight: 600;
   padding: 12px 0;
@@ -1771,23 +1782,11 @@ h3 {
   position: relative;
 }
 
-/* Estilo cuando está activo */
-.services-list li.active {
+.services-list li:hover {
   font-weight: bold;
 }
 
-/* Estilos para las descripciones de los servicios */
-.service-description {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;  /* Tamaño de fuente más pequeño */
-  font-weight: 400;
-  color: #666; /* Color más claro para las descripciones */
-  margin-top: 8px;
-  line-height: 1.5; /* Espaciado más amplio */
-  display: none; /* Ocultar inicialmente las descripciones */
-}
-
-.services-list li.active .service-description {
+/*.services-list li.active .service-description {
   display: block; /* Mostrar la descripción solo cuando el servicio está activo */
 }
 
@@ -1850,3 +1849,17 @@ vision
   margin-bottom: 30px; /* Espacio entre el título y el párrafo */
   text-transform: uppercase; /* Opcional: texto en mayúsculas */
 }
+
+@media (max-width: 768px) {
+  .vision-box {
+    width: 90vw;  /* Usa el 90% del ancho de la pantalla */
+    padding: 30px; /* Reduce el padding */
+  }
+
+  .vision-title {
+    font-size: 24px; /* Reduce tamaño de título */
+  }
+
+  .vision-text {
+    font-size: 14px; /* Reduce tamaño de texto */
+  }
