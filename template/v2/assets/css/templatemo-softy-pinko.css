@@ -619,18 +619,22 @@ header
 
 @media (max-width: 991px) {
   .header-area {
-    padding: 0px 15px;
-    height: 80px;
-    box-shadow: none;
-    text-align: center;
+    padding: 15px 15px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .header-area .container {
     padding: 0px;
   }
-  .header-area .logo {
-    margin-top: 27px !important;
+  .header-area .logo img {
+    max-width: 130px; /* Ajusta el tamaño según necesites */
+    height: auto; /* Mantiene la proporción */
     display: block;
+    margin: 5px auto;
   }
+
   .header-area .menu-trigger {
     display: block !important;
   }
@@ -676,7 +680,6 @@ header
     display: flex !important;
   }
 }
-
 /* 
 ---------------------------------------------
 welcome
@@ -788,6 +791,7 @@ welcome
     color: #ffffff;
     margin-bottom: 20px;
   }
+
   /* Ajustes de imágenes parallax */
   .parallax-img {
     width: 150px; /* Reduce el tamaño en pantallas medianas */
@@ -805,7 +809,7 @@ welcome
     max-width: 80%; /* Reduce el ancho para que no quede tan extendido */
     font-size: 14px;
     line-height: 1.4;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .parallax-img.one {
