@@ -763,7 +763,7 @@ welcome
 
 @media (max-width: 991px) {
   .welcome-area {
-    height: auto; /* Permite que el contenido defina la altura */
+    height: 100vh;
     padding: 60px 20px; /* Agrega espaciado para que no quede apretado */
   }
   
