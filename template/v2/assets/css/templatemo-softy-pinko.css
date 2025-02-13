@@ -777,15 +777,15 @@ welcome
   
   .welcome-area .header-text h1 {
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 15px;
   }
   .welcome-area .header-text h1 span {
-    color: #000000;
+    color: #ffffff;
   }
   .welcome-area .header-text p {
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 20px;
   }
   /* Ajustes de imágenes parallax */
