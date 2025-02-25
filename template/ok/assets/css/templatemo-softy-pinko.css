@@ -158,7 +158,7 @@ body {
   display: flex; /* Activa flexbox */
   align-items: center; /* Centra verticalmente */
   justify-content: center; /* Centra horizontalmente */
-  min-height: 50vh; /* Ocupa al menos toda la pantalla */
+  min-height: 60vh; /* Ocupa al menos toda la pantalla */
   padding-bottom: 20px;
   box-sizing: border-box; /* Evita que el padding afecte el tamaño */
   width: 100%; /* Asegura que ocupe todo el ancho disponible */
@@ -883,16 +883,12 @@ vision
 
 @media (max-width: 576px) {
   .vision-box {
-    width: 80vw;  /* Usa el 90% del ancho de la pantalla */
-    padding: 30px; /* Reduce el padding */
-  }
-
-  .vision-title {
-    font-size: 26px; /* Reduce tamaño de título */
+    width: 90vw;  /* Usa el 90% del ancho de la pantalla */
+    padding: 10px; /* Reduce el padding */
   }
 
   .vision-text {
-    font-size: 16px; /* Reduce tamaño de texto */
+    font-size: 22px; /* Reduce tamaño de texto */
   }
 }  
 
