@@ -813,7 +813,7 @@ welcome
 
 @media (max-width: 576px) {
   .welcome-area .header-text {
-    top: 10%;
+    top: 15%;
     transform: translateY(-50%);
     text-align: left;
   }
