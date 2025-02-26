@@ -813,13 +813,13 @@ welcome
 
 @media (max-width: 576px) {
   .welcome-area .header-text {
-    top: 20%;
+    top: 10%;
     transform: translateY(-50%);
     text-align: left;
   }
 
   .welcome-area .header-text h1 {
-    font-size: 36px;
+    font-size: 38px;
     font-weight: 500;
     line-height: 1;
     letter-spacing: 0px;
@@ -828,7 +828,7 @@ welcome
   }
 
   .welcome-area .header-text p {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 50px;
     max-width: 500px;
   }
