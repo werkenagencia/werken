@@ -654,23 +654,35 @@ margin-top: 10px;
 }
 
 @media (max-width: 576px) {
+.welcome-area {
+min-height: 120vh; 
+background-position: center bottom !important;
+display: flex;
+align-items: center; /* Centra el contenido */
+justify-content: center;
+}
+
 .welcome-area .header-text {
-top: 30%;
-transform: translateY(-50%);
+position: absolute; /* Saca el texto del flujo normal */
+top: 20%; /* Ajusta este valor para subir o bajar */
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
 }
 
 .welcome-area .header-text h1 {
-font-size: 38px;
+font-size: 40px;
 font-weight: 500;
 line-height: 1;
 letter-spacing: 0px;
-margin-bottom: 10px;
+margin-bottom: 30px;
+padding-top: 300px;
 max-width: 500px;
 }
 
 .welcome-area .header-text p {
 font-size: 16px;
-margin-top: 50px;
+margin-top: 60px;
 max-width: 550px;
 }
 }
